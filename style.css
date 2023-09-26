@@ -17,8 +17,6 @@ h2, h4, p{
 }
 
 .main{
-  width: 600px;
-  height: 400px;
   box-shadow: -1px 3px 14px -3px rgba(0,0,0,0.75);
   border-radius: 7px;
   overflow: hidden;
@@ -31,7 +29,7 @@ h2, h4, p{
 }
 
 #bottom{
-  display: flex;
+  display: block;
   width: 100%;
   height: 55%;
   color: white;
@@ -43,14 +41,14 @@ h2, h4, p{
 }
 
 #left{
-  flex:50%;
+  width: 100%;
   height: 100%;
   background-color: #2ab2af;
   padding: 30px;
 }
 
 #right{
-  flex: 50%;
+  width: 100%;
   height: 100%;
   background-color: #1ac9c5;
   padding: 20px;
@@ -89,7 +87,7 @@ button{
   margin-top: 10px;
 }
 
-button:hover{
+button: hover{
   cursor: pointer;
   background-color: #a9c42d;
   transform: scale(1.02);
@@ -117,18 +115,27 @@ ul li{
   opacity: .6;
 }
 
-@media (max-width: 768px){
-  #top{
-    width: 80vw;
+/*Mobile-first approach media query CSS*/
+
+@media (min-width: 576px){
+  .main{
+    width: 600px;
+    height: 400px;
   }
-  #top h4{
-    font-size: 1.2rem;
-  }
-  #top p{
-    font-size: 1rem
+  #bottom{
+    display: flex;
   }
   
+}
+
+/*this CSS is Desktop first approach media query CSS
+@media (max-width: 650px){
   #bottom{
     display: block;
   }
-}
+  
+  #right, #left, .main{
+    width: 100%;
+    height: auto;
+  }
+}*/
