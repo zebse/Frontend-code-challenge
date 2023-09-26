@@ -128,7 +128,7 @@ ul li{
   
 }
 
-/*this CSS is Desktop first approach media query CSS
+/*this CSS is a Desktop-first approach media query CSS
 @media (max-width: 650px){
   #bottom{
     display: block;
