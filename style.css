@@ -17,9 +17,10 @@ h2, h4, p{
 }
 
 .main{
-  box-shadow: -1px 3px 14px -3px RGBA(0,0,0,0.75);
+  box-shadow: -1px 3px 14px -3px rgba(0,0,0,0.75);
   border-radius: 7px;
   overflow: hidden;
+  align-items: center;
 }
 
 #top{
@@ -119,7 +120,7 @@ ul li{
 
 @media (min-width: 576px){
   .main{
-    width: 600px;
+    width: 550px;
     height: 400px;
   }
   #bottom{
@@ -128,7 +129,7 @@ ul li{
   
 }
 
-/*this CSS is a Desktop-first approach media query CSS
+/*this CSS is Desktop first approach media query CSS
 @media (max-width: 650px){
   #bottom{
     display: block;
